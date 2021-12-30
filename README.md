@@ -1,7 +1,7 @@
 # cpp-primer-achieve
 
 [![C++](https://img.shields.io/badge/C++-11-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
-[![release](https://img.shields.io/badge/release-0.1.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
+[![release](https://img.shields.io/badge/release-0.2.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
 
 > C++ Primer Learning.
 
