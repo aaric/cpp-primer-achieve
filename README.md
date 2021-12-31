@@ -29,11 +29,12 @@ g++ -std=c++11 -g main.cpp func.cpp -o main
 
 ### 2.2 CMake
 
-> `-G "MinGW Makefiles"` *Generate `mingw32-make` makefile*
+> `-G "MinGW Makefiles"` *Generate `mingw32-make` makefile*  
+> `-DCMAKE_BUILD_TYPE=Debug` *Support debug*
 
 ```powershell
 cd .\build
-cmake -G "MinGW Makefiles" ..
+cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
 mingw32-make
 .\main apple banana cherry
 ```
