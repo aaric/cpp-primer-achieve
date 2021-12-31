@@ -9,7 +9,8 @@
                 "-fdiagnostics-color=always",
                 "-std=c++11",
                 "-g",
-                "${file}",
+                "main.cpp",
+                "func.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

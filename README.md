@@ -5,9 +5,7 @@
 
 > C++ Primer Learning.
 
-## 1 VsCode
-
-### 1.1 Plugins
+## 1 VsCode Plugins
 
 > [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)  
 > [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)  
@@ -16,9 +14,9 @@
 > [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)  
 > [C/C++ Themes](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-themes)
 
-### 1.2 Manual Build
+## 2 Manual Build
 
-#### 1.2.1 GCC
+### 2.1 GCC
 
 > `-std=c++11` *Support C++ 11 STD*
 
@@ -28,7 +26,7 @@ g++ -std=c++11 -g main.cpp func.cpp -o main
 .\main apple banana cherry
 ```
 
-#### 1.2.2 CMake
+### 2.2 CMake
 
 > `-G "MinGW Makefiles"` *Generate `mingw32-make` makefile*
 
