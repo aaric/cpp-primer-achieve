@@ -9,13 +9,13 @@
                 "-fdiagnostics-color=always",
                 "-std=c++11",
                 "-g",
-                "main.cpp",
-                "func.cpp",
+                "src/main.cpp",
+                "src/func.cpp",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}/main.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
                 "$gcc"
