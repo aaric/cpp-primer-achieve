@@ -1,4 +1,5 @@
 #include <iostream>
+#include "func.h"
 
 using namespace std;
 
@@ -10,6 +11,8 @@ int main(int argc, char *argv[])
     }
 
     cout << "hello world" << endl;
+
+    cout << "max value: " << max(1, 2) << endl;
 
     return 0;
 }
