@@ -37,3 +37,4 @@ cmake -G "MinGW Makefiles" ..
 mingw32-make
 .\main apple banana cherry
 ```
+0.3.0 launch.json cmake
