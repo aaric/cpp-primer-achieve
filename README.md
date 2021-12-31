@@ -16,23 +16,10 @@
 
 ## 2 Manual Build
 
-### 2.1 GCC
-
 > `-std=c++11` *Support C++ 11 STD*
 
 ```powershell
 cd .\src
 g++ -std=c++11 -g main.cpp func.cpp -o main
-.\main apple banana cherry
-```
-
-### 2.2 CMake
-
-> `-G "MinGW Makefiles"` *Generate `mingw32-make` makefile*
-
-```powershell
-cd .\build
-cmake -G "MinGW Makefiles" ..
-mingw32-make
 .\main apple banana cherry
 ```
