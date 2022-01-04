@@ -21,11 +21,16 @@
 
 ### 2.1 GCC
 
-> `-std=c++11` *Support C++ 11 STD*
+> `-std=c++17` *Support C++ 17 STD*  
+> &emsp;&emsp;`C++98` *199711L*  
+> &emsp;&emsp;`C++11` *201103L*  
+> &emsp;&emsp;`C++14` *201402L*  
+> &emsp;&emsp;`C++17` *201703L*  
+> &emsp;&emsp;`C++20` *202002L*
 
 ```powershell
 cd .\src
-g++ -std=c++11 -g main.cpp func.cpp -o main
+g++ -std=c++17 -g main.cpp func.cpp -o main
 .\main apple banana cherry
 ```
 
