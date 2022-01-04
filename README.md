@@ -1,7 +1,7 @@
 # cpp-primer-achieve
 
 [![C++](https://img.shields.io/badge/C++-17-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
-[![CMake](https://img.shields.io/badge/CMake-3.21.4-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org)
+[![CMake](https://img.shields.io/badge/CMake-3.21.4-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org/cmake/help/v3.21/guide/tutorial/index.html)
 [![release](https://img.shields.io/badge/release-0.5.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
 
 > C++ Primer Learning.
@@ -36,12 +36,12 @@ g++ -std=c++17 -g main.cpp func.cpp -o main
 
 ### 2.2 CMake
 
-> `-G "MinGW Makefiles"` *Generate `mingw32-make` makefile*  
+> [`-G "MinGW Makefiles"`](https://cmake.org/cmake/help/v2.8.12/cmake.html#section_Generators) *Generate `mingw32-make` makefile*  
 > `-DCMAKE_BUILD_TYPE=Debug` *Support debug*
 
 ```powershell
 cd .\build
-cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
+cmake -G "MinGW Makefiles" -D CMAKE_BUILD_TYPE=Debug ..
 mingw32-make
 .\main apple banana cherry
 ```
