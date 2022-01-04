@@ -2,7 +2,7 @@
 
 [![C++](https://img.shields.io/badge/C++-17-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
 [![CMake](https://img.shields.io/badge/CMake-3.21.4-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org)
-[![release](https://img.shields.io/badge/release-0.4.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
+[![release](https://img.shields.io/badge/release-0.5.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
 
 > C++ Primer Learning.
 
@@ -26,7 +26,7 @@
 > &emsp;&emsp;`C++11` *201103L*  
 > &emsp;&emsp;`C++14` *201402L*  
 > &emsp;&emsp;`C++17` *201703L*  
-> &emsp;&emsp;`C++20` *202002L*
+> &emsp;&emsp;`C++20` *202002L - `g++-v8.1.0` Not supported*
 
 ```powershell
 cd .\src
