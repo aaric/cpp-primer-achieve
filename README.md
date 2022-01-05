@@ -2,7 +2,7 @@
 
 [![C++](https://img.shields.io/badge/C++-17-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
 [![CMake](https://img.shields.io/badge/CMake-3.21.4-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org/cmake/help/v3.21/guide/tutorial/index.html)
-[![release](https://img.shields.io/badge/release-0.5.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
+[![release](https://img.shields.io/badge/release-0.6.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
 
 > C++ Primer Learning.
 
