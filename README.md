@@ -1,8 +1,8 @@
 # cpp-primer-achieve
 
-[![C++](https://img.shields.io/badge/C++-11-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
-[![CMake](https://img.shields.io/badge/CMake-3.21.4-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org)
-[![release](https://img.shields.io/badge/release-0.4.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
+[![C++](https://img.shields.io/badge/C++-17-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
+[![CMake](https://img.shields.io/badge/CMake-3.21.4-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org/cmake/help/v3.21/guide/tutorial/index.html)
+[![release](https://img.shields.io/badge/release-0.5.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
 
 > C++ Primer Learning.
 
@@ -17,24 +17,31 @@
 
 ## 2 Manual Build
 
+> [Compiler C++ Version Defaults](https://gist.github.com/ax3l/53db9fa8a4f4c21ecc5c4100c0d93c94)
+
 ### 2.1 GCC
 
-> `-std=c++11` *Support C++ 11 STD*
+> `-std=c++17` *Support C++ 17 STD*  
+> &emsp;&emsp;`C++98` *199711L*  
+> &emsp;&emsp;`C++11` *201103L*  
+> &emsp;&emsp;`C++14` *201402L*  
+> &emsp;&emsp;`C++17` *201703L*  
+> &emsp;&emsp;`C++20` *202002L - `g++-v8.1.0` Not supported*
 
 ```powershell
 cd .\src
-g++ -std=c++11 -g main.cpp func.cpp -o main
+g++ -std=c++17 -g main.cpp func.cpp -o main
 .\main apple banana cherry
 ```
 
 ### 2.2 CMake
 
-> `-G "MinGW Makefiles"` *Generate `mingw32-make` makefile*  
+> [`-G "MinGW Makefiles"`](https://cmake.org/cmake/help/v2.8.12/cmake.html#section_Generators) *Generate `mingw32-make` makefile*  
 > `-DCMAKE_BUILD_TYPE=Debug` *Support debug*
 
 ```powershell
 cd .\build
-cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Debug ..
+cmake -G "MinGW Makefiles" -D CMAKE_BUILD_TYPE=Debug ..
 mingw32-make
 .\main apple banana cherry
 ```
