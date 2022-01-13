@@ -1,12 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 
-if (POLICY CMP0048)
-  cmake_policy(SET CMP0048 NEW)
-endif (POLICY CMP0048)
+project(main)
 
-project(main VERSION 0.6.0)
-
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(SRC_LIST src/main.cpp src/func.cpp)
