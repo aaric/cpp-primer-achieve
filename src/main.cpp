@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include <utility>
 #include "Two.h"
 
 int main(int argc, char **argv)
@@ -37,7 +38,8 @@ int main(int argc, char **argv)
     }
 
     // Tow class
-    std::unique_ptr<Two> two(new Two(10, 20));
+    // std::unique_ptr<Two> two(new Two(10, 20));
+    auto two = std::make_unique<Two>(10, 20);
     two->info();
     std::cout << "Two: max = " << two->max() << std::endl;
 

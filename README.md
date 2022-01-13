@@ -1,6 +1,6 @@
 # cpp-primer-achieve
 
-[![C++](https://img.shields.io/badge/C++-11-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
+[![C++](https://img.shields.io/badge/C++-17-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
 [![CMake](https://img.shields.io/badge/CMake-3.10-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org/cmake/help/v3.10)
 [![release](https://img.shields.io/badge/release-0.7.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
 
@@ -23,9 +23,9 @@
 
 > `-std=c++17` *Support C++ 17 STD*  
 > &emsp;&emsp;`C++98` *199711L*  
-> &emsp;&emsp;`C++11` ***201103L***  
+> &emsp;&emsp;`C++11` *201103L*  
 > &emsp;&emsp;`C++14` *201402L*  
-> &emsp;&emsp;`C++17` *201703L*  
+> &emsp;&emsp;`C++17` ***201703L***  
 > &emsp;&emsp;`C++20` *202002L - `g++-v8.1.0` Not supported*
 
 ### 2.1.1 Install
@@ -47,7 +47,7 @@ g++ test.o -o test
 
 ```powershell
 cd .\src
-g++ -std=c++11 -g main.cpp Tow.cpp -I ../include -Wall -o main
+g++ -std=c++17 -g main.cpp Tow.cpp -I ../include -Wall -o main
 .\main apple banana cherry
 ```
 
