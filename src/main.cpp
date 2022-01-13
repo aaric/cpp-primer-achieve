@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include "Two.h"
 
 int main(int argc, char **argv)
@@ -36,9 +37,9 @@ int main(int argc, char **argv)
     }
 
     // Tow class
-    Two two(10, 20);
-    two.info();
-    std::cout << "Two: max = " << two.max() << std::endl;
+    std::unique_ptr<Two> two(new Two(10, 20));
+    two->info();
+    std::cout << "Two: max = " << two->max() << std::endl;
 
     return 0;
 }
