@@ -35,6 +35,12 @@
 sudo apt install build-essential gdb
 g++ --version
 gdb --version
+
+# workflow
+g++ -E test.cpp -o test.i
+g++ -S test.i -o test.s
+g++ -c test.s -o test.o
+g++ test.o -o test
 ```
 
 #### 2.1.2 Build
@@ -50,11 +56,12 @@ g++ -std=c++17 -g main.cpp func.cpp -o main
 > [`-G "MinGW Makefiles"`](https://cmake.org/cmake/help/v2.8.12/cmake.html#section_Generators) *Generate `mingw32-make` makefile*  
 > `-DCMAKE_BUILD_TYPE=Debug` *Support debug*
 
-#### 2.2.1 Install
+#### 2.2.1 Ubuntu Install
 
 ```bash
 # ubuntu
 sudo apt install cmake
+cmake --version
 ```
 
 #### 2.2.2 Build
