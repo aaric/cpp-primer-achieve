@@ -1,40 +1,44 @@
 #include <iostream>
-#include "func.h"
+#include "Two.h"
 
-using namespace std;
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
+    // Hello World
+    std::cout << "hello world" << std::endl;
+
+    // C++ version
     switch (__cplusplus)
     {
     case 199711L:
-        cout << "C++98" << endl;
+        std::cout << "C++98" << std::endl;
         break;
     case 201103L:
-        cout << "C++11" << endl;
+        std::cout << "C++11" << std::endl;
         break;
     case 201402L:
-        cout << "C++14" << endl;
+        std::cout << "C++14" << std::endl;
         break;
     case 201703L:
-        cout << "C++17" << endl;
+        std::cout << "C++17" << std::endl;
         break;
     case 202002L:
-        cout << "C++20" << endl;
+        std::cout << "C++20" << std::endl;
         break;
     default:
-        cout << "C++XX" << endl;
+        std::cout << "C++XX" << std::endl;
         break;
     }
 
+    // Command line parameters
     for (int i = 0; i < argc; i++)
     {
-        cout << argv[i] << endl;
+        std::cout << *argv[i] << std::endl;
     }
 
-    cout << "hello world" << endl;
-
-    cout << "max value: " << max(1, 2) << endl;
+    // Tow class
+    Two two(10, 20);
+    two.info();
+    std::cout << "Two: max = " << two.max() << std::endl;
 
     return 0;
 }

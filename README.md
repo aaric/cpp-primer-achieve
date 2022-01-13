@@ -47,7 +47,7 @@ g++ test.o -o test
 
 ```powershell
 cd .\src
-g++ -std=c++17 -g main.cpp func.cpp -o main
+g++ -std=c++11 -g main.cpp Tow.cpp -I ../include -Wall -o main
 .\main apple banana cherry
 ```
 
