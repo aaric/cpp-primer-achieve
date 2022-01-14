@@ -1,8 +1,8 @@
 # cpp-primer-achieve
 
 [![C++](https://img.shields.io/badge/C++-17-brightgreen.svg?style=flat&logo=cplusplus)](https://isocpp.org)
-[![CMake](https://img.shields.io/badge/CMake-3.21.4-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org/cmake/help/v3.21/guide/tutorial/index.html)
-[![release](https://img.shields.io/badge/release-0.5.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
+[![CMake](https://img.shields.io/badge/CMake-3.10-brightgreen.svg?style=flat&logo=cmake)](https://cmake.org/cmake/help/v3.10)
+[![release](https://img.shields.io/badge/release-0.7.0-blue.svg)](https://github.com/aaric/cpp-primer-achieve/releases)
 
 > C++ Primer Learning.
 
@@ -25,12 +25,29 @@
 > &emsp;&emsp;`C++98` *199711L*  
 > &emsp;&emsp;`C++11` *201103L*  
 > &emsp;&emsp;`C++14` *201402L*  
-> &emsp;&emsp;`C++17` *201703L*  
+> &emsp;&emsp;`C++17` ***201703L***  
 > &emsp;&emsp;`C++20` *202002L - `g++-v8.1.0` Not supported*
+
+### 2.1.1 Install
+
+```bash
+# ubuntu
+sudo apt install build-essential gdb
+g++ --version
+gdb --version
+
+# workflow
+g++ -E test.cpp -o test.i
+g++ -S test.i -o test.s
+g++ -c test.s -o test.o
+g++ test.o -o test
+```
+
+#### 2.1.2 Build
 
 ```powershell
 cd .\src
-g++ -std=c++17 -g main.cpp func.cpp -o main
+g++ -std=c++17 -g main.cpp Tow.cpp -I ../include -Wall -o main
 .\main apple banana cherry
 ```
 
@@ -38,6 +55,16 @@ g++ -std=c++17 -g main.cpp func.cpp -o main
 
 > [`-G "MinGW Makefiles"`](https://cmake.org/cmake/help/v2.8.12/cmake.html#section_Generators) *Generate `mingw32-make` makefile*  
 > `-DCMAKE_BUILD_TYPE=Debug` *Support debug*
+
+#### 2.2.1 Install
+
+```bash
+# ubuntu
+sudo apt install cmake
+cmake --version
+```
+
+#### 2.2.2 Build
 
 ```powershell
 cd .\build
