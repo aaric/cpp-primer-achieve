@@ -56,7 +56,7 @@ g++ -std=c++17 -g main.cpp Tow.cpp -I ../include -Wall -o main
 > [`-G "MinGW Makefiles"`](https://cmake.org/cmake/help/v2.8.12/cmake.html#section_Generators) *Generate `mingw32-make` makefile*  
 > `-DCMAKE_BUILD_TYPE=Debug` *Support debug*
 
-#### 2.2.1 Ubuntu Install
+#### 2.2.1 Install
 
 ```bash
 # ubuntu
