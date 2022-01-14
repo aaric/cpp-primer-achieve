@@ -5,15 +5,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
-
-set(CUSTOM_PROJECT_NAME "main")
-
-project(${CUSTOM_PROJECT_NAME})
+project(main VERSION 1.0)
 
 set(SRC_LIST src/main.cpp src/Two.cpp)
 
+message(STATUS "CMAKE_PROJECT_NAME: ${CMAKE_PROJECT_NAME}")
+message(STATUS "CMAKE_PROJECT_VERSION: ${CMAKE_PROJECT_VERSION}")
 message(STATUS "PROJECT_SOURCE_DIR: ${PROJECT_SOURCE_DIR}")
+message(STATUS "PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
 
 include_directories(include)
 
-add_executable(${CUSTOM_PROJECT_NAME} ${SRC_LIST})
+add_executable(${CMAKE_PROJECT_NAME} ${SRC_LIST})
