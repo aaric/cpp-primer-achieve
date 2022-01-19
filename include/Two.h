@@ -10,8 +10,8 @@ private:
 public:
     Two(int m, int n)
     {
-        this->_m = m;
-        this->_n = n;
+        _m = m;
+        _n = n;
     }
     int max();
     void info();

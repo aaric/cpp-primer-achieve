@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
-project(main VERSION 1.0)
+project(main VERSION 0.8.0)
 
 set(SRC_LIST src/main.cpp src/Two.cpp)
 
