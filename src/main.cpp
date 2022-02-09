@@ -2,6 +2,8 @@
 #include <memory>
 #include "Two.h"
 
+extern int g_two;
+
 int main(int argc, char **argv)
 {
     // Hello World
@@ -40,7 +42,9 @@ int main(int argc, char **argv)
     // std::unique_ptr<Two> two(new Two(10, 20));
     auto two = std::make_unique<Two>(10, 20);
     two->info();
-    std::cout << "Two: max = " << two->max() << std::endl;
+    std::cout << "Two: max = " << two->max()
+              << ", g_two: " << g_two
+              << std::endl;
 
     return 0;
 }
