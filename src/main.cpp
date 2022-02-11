@@ -1,8 +1,8 @@
 #include <iostream>
 // #include <memory>
-// #include <string>
+#include <string>
 // #include <cctype>
-# include <vector>
+#include <vector>
 // #include "Two.h"
 
 // extern int g_two;
@@ -10,13 +10,27 @@
 int main(int argc, char **argv)
 {
     // -- vector
-    vector<int> ints;
-
+    std::vector<int> v1 = {1, 2, 3};
+    v1.push_back(4);
+    if (!v1.empty())
+    {
+        std::cout << v1.size() << std::endl;
+    }
+    // -- old: for (std::vector<std::int>::iterator it1 = v1.begin(); it1 != v1.end(); it1++)
+    for (auto it1 = v1.begin(); it1 != v1.end(); it1++)
+    {
+        std::cout << *it1 << std::endl;
+    }
+    const std::vector<std::string> v2(3, "abc");
+    for (auto it2 = v2.cbegin(); it2 != v2.cend() && !it2->empty(); it2++)
+    {
+        std::cout << *it2 << std::endl;
+    }
 
     // -- auto & decltype
     // auto m = 123;
     // decltype(m) n = 456;
-    // std::cout << m + n << std::endl;
+    // std::cout << (m + n) << std::endl;
 
     // -- string
     // std::string line;
@@ -32,7 +46,7 @@ int main(int argc, char **argv)
     // std::cout << std::ispunct(c) << std::endl;
 
     // -- Tow class
-    // -- std::unique_ptr<Two> two(new Two(10, 20));
+    // -- old: std::unique_ptr<Two> two(new Two(10, 20));
     // auto two = std::make_unique<Two>(10, 20);
     // two->info();
     // std::cout << "Two: max = " << two->max()
