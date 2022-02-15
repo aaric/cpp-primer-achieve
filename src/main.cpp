@@ -44,6 +44,16 @@ int main(int argc, char **argv)
     // std::cout << s3 << std::endl;
     // unsigned char c = '?';
     // std::cout << std::ispunct(c) << std::endl;
+//     std::string raw = R"(<html>
+// <head>
+//     <title>hello world</title>
+// </head>
+// <body>
+//     <h1>Test raw string.</h1>
+// </body>
+// </html>
+// )";
+//     std::cout << raw << std::endl;
 
     // -- Tow class
     // -- old: std::unique_ptr<Two> two(new Two(10, 20));
