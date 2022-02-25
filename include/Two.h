@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-// static int g_two = 1;
+static int g_two = 1;
 
 class Two
 {
