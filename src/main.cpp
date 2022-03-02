@@ -4,7 +4,7 @@
 // #include <vector>
 #include "syntax.h"
 
-extern int g_two;
+// extern int g_two;
 
 int main(int argc, char **argv)
 {
@@ -28,12 +28,10 @@ int main(int argc, char **argv)
     // }
 
     // -- auto & decltype
-    // auto m = 123;
-    // decltype(m) n = 456;
-    // std::cout << (m + n) << std::endl;
+    test_syntax_auto();
 
     // -- Test string
-    test_syntax_string();
+    // test_syntax_string();
 
     // -- Test class
     // test_syntax_class();

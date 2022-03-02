@@ -2,6 +2,13 @@
 #include <memory>
 #include "Two.h"
 
+void test_syntax_auto()
+{
+    auto m = 123;
+    decltype(m) n = 456;
+    std::cout << (m + n) << std::endl;
+}
+
 void test_syntax_string()
 {
     std::string line;
