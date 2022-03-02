@@ -2,7 +2,32 @@
 #include <memory>
 #include "Two.h"
 
-void test_class()
+void test_syntax_string()
+{
+    std::string line;
+    while (std::getline(std::cin, line))
+    {
+        std::cout << line << std::endl;
+    }
+    std::string s1 = "hello", s2 = "world";
+    std::string s3 = s1 + s2;
+    // std::string s4 = "hello" + "world";
+    std::cout << s3 << std::endl;
+    unsigned char c = '?';
+    std::cout << std::ispunct(c) << std::endl;
+    std::string raw = R"(<html>
+<head>
+    <title>hello world</title>
+</head>
+<body>
+    <h1>Test raw string.</h1>
+</body>
+</html>
+)";
+    std::cout << raw << std::endl;
+}
+
+void test_syntax_class()
 {
     // std::unique_ptr<Two> two(new Two(10, 20));
     auto two = std::make_unique<Two>(10, 20);

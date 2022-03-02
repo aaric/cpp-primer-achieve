@@ -33,31 +33,11 @@ int main(int argc, char **argv)
     // std::cout << (m + n) << std::endl;
 
     // -- Test string
-    // std::string line;
-    // while (std::getline(std::cin, line))
-    // {
-    //     std::cout << line << std::endl;
-    // }
-    // std::string s1 = "hello", s2 = "world";
-    // std::string s3 = s1 + s2;
-    // -- error: std::string s4 = "hello" + "world";
-    // std::cout << s3 << std::endl;
-    // unsigned char c = '?';
-    // std::cout << std::ispunct(c) << std::endl;
-    //     std::string raw = R"(<html>
-    // <head>
-    //     <title>hello world</title>
-    // </head>
-    // <body>
-    //     <h1>Test raw string.</h1>
-    // </body>
-    // </html>
-    // )";
-    //     std::cout << raw << std::endl;
+    test_syntax_string();
 
     // -- Test class
-    test_class();
-    std::cout << g_two << std::endl;
+    // test_syntax_class();
+    // std::cout << g_two << std::endl;
 
     // -- Command line parameters
     // command_line_parameters(argc, argv);
