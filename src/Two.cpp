@@ -2,16 +2,16 @@
 
 int Two::max()
 {
-    if (this->_m > this->_n)
+    if (_m > _n)
     {
-        return this->_m;
+        return _m;
     }
-    return this->_n;
+    return _n;
 }
 
 void Two::info()
 {
-    std::cout << "Two: m = " << this->_m
-              << ", n = " << this->_n
+    std::cout << "Two: m = " << _m
+              << ", n = " << _n
               << std::endl;
 }

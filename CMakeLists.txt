@@ -1,14 +1,22 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(main)
-
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
+project(main VERSION 0.8.0)
+
+# set(DCMAKE_BUILD_TYPE Debug)
+# set(CMAKE_INSTALL_PREFIX "E://test_cpp")
 set(SRC_LIST src/main.cpp src/Two.cpp)
 
-include_directories(${PROJECT_SOURCE_DIR}/include)
+message(STATUS "CMAKE_PROJECT_NAME: ${CMAKE_PROJECT_NAME}")
+message(STATUS "CMAKE_PROJECT_VERSION: ${CMAKE_PROJECT_VERSION}")
+message(STATUS "CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
+message(STATUS "PROJECT_SOURCE_DIR: ${PROJECT_SOURCE_DIR}")
+message(STATUS "PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
 
-add_executable(main ${SRC_LIST})
+include_directories(include)
+
+add_executable(${CMAKE_PROJECT_NAME} ${SRC_LIST})
