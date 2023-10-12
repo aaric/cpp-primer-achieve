@@ -6,6 +6,7 @@ class Ch07Entity
 {
   private:
     std::string m_Name;
+    mutable int m_DebugCount = 0;
 
   public:
     Ch07Entity() : m_Name("Unknown")
@@ -18,6 +19,7 @@ class Ch07Entity
 
     const std::string &GetName() const
     {
+        m_DebugCount++;
         return m_Name;
     }
 };
