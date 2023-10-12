@@ -1,31 +1,37 @@
 #include <iostream>
-#include "syntax.h"
+// #include "ch01_cpp_version.h"
+// #include "ch02_command_line_parameters.h"
+// #include "ch03_class.h"
+// #include "ch04_string.h"
+// #include "ch05_auto_decltype.h"
+#include "ch06_vector.h"
 
 // extern int g_two;
 
 int main(int argc, char **argv)
 {
-    // vector
-    // test_syntax_vector();
 
-    // auto & decltype
-    // test_syntax_auto();
+    // hello world
+    std::cout << "hello world" << std::endl;
 
-    // string
-    // test_syntax_string();
+    // ch01_cpp_version.h
+    //     cpp_version();
 
-    // class
+    // ch02_command_line_parameters.h
+    //     command_line_parameters(argc, argv);
+
+    // ch03_class.h
     // test_syntax_class();
     // std::cout << g_two << std::endl;
 
-    // command line parameters
-    // command_line_parameters(argc, argv);
+    // ch04_string.h
+    // test_syntax_string();
 
-    // C++ version
-    // cpp_version();
+    // ch05_auto_decltype.h
+    // test_syntax_auto();
 
-    // hello world
-    // hello_word();
+    // ch06_vector.h
+    test_syntax_vector();
 
     return 0;
 }
