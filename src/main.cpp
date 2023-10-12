@@ -1,5 +1,10 @@
-#include "ch01_cpp_version.h"
 #include <iostream>
+// #include "ch01_cpp_version.h"
+// #include "ch02_command_line_parameters.h"
+// #include "ch03_class.h"
+// #include "ch04_string.h"
+// #include "ch05_auto_decltype.h"
+#include "ch06_vector.h"
 
 // extern int g_two;
 
@@ -10,32 +15,23 @@ int main(int argc, char **argv)
     std::cout << "hello world" << std::endl;
 
     // ch01_cpp_version.h
-    // cpp_version();
+    //     cpp_version();
 
-    // command line parameters
-    // command_line_parameters(argc, argv);
+    // ch02_command_line_parameters.h
+    //     command_line_parameters(argc, argv);
 
-    // class
+    // ch03_class.h
     // test_syntax_class();
     // std::cout << g_two << std::endl;
 
-    // string
+    // ch04_string.h
     // test_syntax_string();
 
-    // auto & decltype
+    // ch05_auto_decltype.h
     // test_syntax_auto();
 
-    // vector
-    // test_syntax_vector();
-
-    // std::wstring LPCTSTR   中文
-    std::wstring wstr = L"hello 中文";
-    // setlocale(LC_ALL, "chs");
-    std::wcout << wstr.c_str() << std::endl;
-
-    // wchar_t str[20] = {0};
-    // swprintf_s(str, 19, L"%s", wstr.c_str());
-    // std::cout << str << std::endl;
+    // ch06_vector.h
+    test_syntax_vector();
 
     return 0;
 }

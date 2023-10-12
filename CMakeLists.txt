@@ -9,7 +9,12 @@ project(cpp-primer-achieve VERSION 1.0.0)
 
 # set(DCMAKE_BUILD_TYPE Debug)
 # set(CMAKE_INSTALL_PREFIX "E://test_cpp")
-set(SRC_LIST src/main.cpp src/Two.cpp)
+set(SRC_LIST src/main.cpp src/Two.cpp
+        include/ch02_command_line_parameters.h
+        include/ch03_class.h
+        include/ch04_string.h
+        include/ch05_auto_decltype.h
+        include/ch06_vector.h)
 
 message(STATUS "CMAKE_PROJECT_NAME: ${CMAKE_PROJECT_NAME}")
 message(STATUS "CMAKE_PROJECT_VERSION: ${CMAKE_PROJECT_VERSION}")
