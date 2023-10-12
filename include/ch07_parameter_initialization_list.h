@@ -30,4 +30,11 @@ void test_syntax_object()
     std::cout << e0.GetName() << std::endl;
     Ch07Entity e1("Aaric");
     std::cout << e1.GetName() << std::endl;
+
+    int x = 8;
+    auto f = [=]() mutable {
+        x++;
+        std::cout << x << std::endl;
+    };
+    f();
 } // CPP_PRIMER_ACHIEVE_CH07_PARAMETER_INITIALIZATION_LIST_H
