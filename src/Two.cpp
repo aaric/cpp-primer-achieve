@@ -11,7 +11,5 @@ int Two::max()
 
 void Two::info()
 {
-    std::cout << "Two: m = " << _m
-              << ", n = " << _n
-              << std::endl;
+    std::cout << "Two: m = " << _m << ", n = " << _n << std::endl;
 }

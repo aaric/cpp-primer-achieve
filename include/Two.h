@@ -5,11 +5,11 @@
 
 class Two
 {
-private:
+  private:
     int _m;
     int _n;
 
-public:
+  public:
     Two(int m, int n)
     {
         _m = m;
