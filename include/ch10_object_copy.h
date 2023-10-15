@@ -17,8 +17,14 @@ public:
         m_Buffer[m_Size] = 0;
     }
 
-    String(String& other) : m_Buffer(other.m_Buffer), m_Size(other.m_Size)
+    // String(String& other) : m_Buffer(other.m_Buffer), m_Size(other.m_Size)
+    // {
+    // }
+
+    String(String& other) : m_Size(other.m_Size)
     {
+        m_Buffer = new char[m_Size];
+        memcpy(m_Buffer, other.m_Buffer, m_Size + 1);
     }
 
     ~String()

@@ -34,15 +34,26 @@ public:
     {
         delete m_Ptr;
     }
+
+    Entity* operator->()
+    {
+        return m_Ptr;
+    }
+
+    const Entity* operator->() const
+    {
+        return m_Ptr;
+    }
 };
 
-void test_syntax_pointer()
+void test_object_pointer()
 {
     Entity* e0 = new Entity();
     delete e0;
 
     {
         ScopedPtr e1 = new Entity();
+        e1->Print();
     }
 
     {
