@@ -22,4 +22,5 @@ message(STATUS "PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
 
 include_directories(include)
 
+add_definitions(-DPR_DEBUG)
 add_executable(${CMAKE_PROJECT_NAME} ${SRC_LIST})

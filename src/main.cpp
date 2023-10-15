@@ -9,7 +9,8 @@
 // #include "ch08_operator.h"
 // #include "ch09_object_pointer.h"
 // #include "ch11_vector_copy.h"
-#include "ch12_template.h"
+//#include "ch12_template.h"
+#include "ch13_macro.h"
 
 // extern int g_two;
 
@@ -54,7 +55,10 @@ int main(int argc, char** argv)
     // test_vector_copy();
 
     // ch12_template.h
-    test_syntax_template();
+    //test_syntax_template();
+
+    // ch13_macro.h
+    test_syntax_macro();
 
     return 0;
 }
