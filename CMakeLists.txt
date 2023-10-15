@@ -16,7 +16,8 @@ set(SRC_LIST src/main.cpp src/Two.cpp
         include/ch05_auto_decltype.h
         include/ch06_vector.h
         include/ch07_parameter_initialization_list.h
-        include/ch08_operator.h)
+        include/ch08_operator.h
+        include/ch09_pointer.h)
 
 message(STATUS "CMAKE_PROJECT_NAME: ${CMAKE_PROJECT_NAME}")
 message(STATUS "CMAKE_PROJECT_VERSION: ${CMAKE_PROJECT_VERSION}")

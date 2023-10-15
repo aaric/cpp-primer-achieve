@@ -6,11 +6,12 @@
 // #include "ch05_auto_decltype.h"
 // #include "ch06_vector.h"
 // #include "ch07_parameter_initialization_list.h"
-#include "ch08_operator.h"
+// #include "ch08_operator.h"
+#include "ch09_pointer.h"
 
 // extern int g_two;
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
 
     // hello world
@@ -39,7 +40,10 @@ int main(int argc, char **argv)
     // test_syntax_object();
 
     // ch08_operator.h
-    test_syntax_operator();
+    // test_syntax_operator();
+
+    // ch09_pointer();
+    test_syntax_pointer();
 
     return 0;
 }
