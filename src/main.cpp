@@ -8,7 +8,8 @@
 // #include "ch07_parameter_initialization_list.h"
 // #include "ch08_operator.h"
 // #include "ch09_object_pointer.h"
-#include "ch11_vector_copy.h"
+// #include "ch11_vector_copy.h"
+#include "ch12_template.h"
 
 // extern int g_two;
 
@@ -50,7 +51,10 @@ int main(int argc, char** argv)
     // test_object_copy();
 
     // ch11_vector_copy.h
-    test_vector_copy();
+    // test_vector_copy();
+
+    // ch12_template.h
+    test_syntax_template();
 
     return 0;
 }
