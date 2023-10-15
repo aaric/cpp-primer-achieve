@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-class Ch07Entity
+class Entity
 {
 private:
     std::string m_Name;
@@ -10,11 +10,11 @@ private:
     mutable int m_DebugCount = 0;
 
 public:
-    explicit Ch07Entity(int age) : m_Name("Unknown"), m_Age(age)
+    explicit Entity(int age) : m_Name("Unknown"), m_Age(age)
     {
     }
 
-    Ch07Entity(const std::string& name) : m_Name(name), m_Age(-1)
+    Entity(const std::string& name) : m_Name(name), m_Age(-1)
     {
     }
 
@@ -25,19 +25,19 @@ public:
     }
 };
 
-void PrintEntity(const Ch07Entity& entity)
+void PrintEntity(const Entity& entity)
 {
 }
 
 void test_syntax_object()
 {
-    Ch07Entity e0(18);
+    Entity e0(18);
     std::cout << e0.GetName() << std::endl;
-    Ch07Entity e1("Aaric");
+    Entity e1("Aaric");
     std::cout << e1.GetName() << std::endl;
 
     // PrintEntity(18);
-    PrintEntity(Ch07Entity(18));
+    PrintEntity(Entity(18));
     PrintEntity(std::string("Aaric"));
 
     int x = 8;
