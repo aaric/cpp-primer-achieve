@@ -10,7 +10,7 @@ class Ch07Entity
     mutable int m_DebugCount = 0;
 
   public:
-    Ch07Entity(int age) : m_Name("Unknown"), m_Age(age)
+    explicit Ch07Entity(int age) : m_Name("Unknown"), m_Age(age)
     {
     }
 
@@ -36,7 +36,8 @@ void test_syntax_object()
     Ch07Entity e1("Aaric");
     std::cout << e1.GetName() << std::endl;
 
-    PrintEntity(18);
+    //PrintEntity(18);
+    PrintEntity(Ch07Entity(18));
     PrintEntity(std::string("Aaric"));
 
     int x = 8;
