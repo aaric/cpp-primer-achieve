@@ -5,7 +5,8 @@
 // #include "ch04_string.h"
 // #include "ch05_auto_decltype.h"
 // #include "ch06_vector.h"
-#include "ch07_parameter_initialization_list.h"
+// #include "ch07_parameter_initialization_list.h"
+#include "ch08_operator.h"
 
 // extern int g_two;
 
@@ -35,7 +36,10 @@ int main(int argc, char **argv)
     // test_syntax_vector();
 
     // ch07_parameter_initialization_list.h
-    test_syntax_object();
+    // test_syntax_object();
+
+    // ch08_operator.h
+    test_syntax_operator();
 
     return 0;
 }

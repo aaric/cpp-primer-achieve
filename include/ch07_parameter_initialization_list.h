@@ -4,28 +4,28 @@
 
 class Ch07Entity
 {
-  private:
+private:
     std::string m_Name;
     int m_Age;
     mutable int m_DebugCount = 0;
 
-  public:
+public:
     explicit Ch07Entity(int age) : m_Name("Unknown"), m_Age(age)
     {
     }
 
-    Ch07Entity(const std::string &name) : m_Name(name), m_Age(-1)
+    Ch07Entity(const std::string& name) : m_Name(name), m_Age(-1)
     {
     }
 
-    const std::string &GetName() const
+    const std::string& GetName() const
     {
         m_DebugCount++;
         return m_Name;
     }
 };
 
-void PrintEntity(const Ch07Entity &entity)
+void PrintEntity(const Ch07Entity& entity)
 {
 }
 
@@ -36,7 +36,7 @@ void test_syntax_object()
     Ch07Entity e1("Aaric");
     std::cout << e1.GetName() << std::endl;
 
-    //PrintEntity(18);
+    // PrintEntity(18);
     PrintEntity(Ch07Entity(18));
     PrintEntity(std::string("Aaric"));
 
