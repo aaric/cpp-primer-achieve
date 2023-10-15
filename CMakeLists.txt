@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
-project(cpp-primer-achieve VERSION 1.0.0)
+project(cpp-primer-achieve VERSION 1.2.0)
 
 # set(DCMAKE_BUILD_TYPE Debug)
 # set(CMAKE_INSTALL_PREFIX "E://test_cpp")

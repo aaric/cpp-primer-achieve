@@ -7,7 +7,8 @@
 // #include "ch06_vector.h"
 // #include "ch07_parameter_initialization_list.h"
 // #include "ch08_operator.h"
-#include "ch09_pointer.h"
+//#include "ch09_pointer.h"
+#include "ch10_object_copy.h"
 
 // extern int g_two;
 
@@ -43,7 +44,10 @@ int main(int argc, char** argv)
     // test_syntax_operator();
 
     // ch09_pointer();
-    test_syntax_pointer();
+    //test_syntax_pointer();
+
+    // ch10_object_copy.h
+    test_object_copy();
 
     return 0;
 }
