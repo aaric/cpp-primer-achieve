@@ -4,15 +4,19 @@
 // #include "ch03_class.h"
 // #include "ch04_string.h"
 // #include "ch05_auto_decltype.h"
-#include "ch06_vector.h"
+// #include "ch06_vector.h"
+// #include "ch07_parameter_initialization_list.h"
+// #include "ch08_operator.h"
+//#include "ch09_pointer.h"
+#include "ch10_object_copy.h"
 
 // extern int g_two;
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
 
     // hello world
-    std::cout << "hello world" << std::endl;
+    // std::cout << "hello world" << std::endl;
 
     // ch01_cpp_version.h
     //     cpp_version();
@@ -31,7 +35,19 @@ int main(int argc, char **argv)
     // test_syntax_auto();
 
     // ch06_vector.h
-    test_syntax_vector();
+    // test_syntax_vector();
+
+    // ch07_parameter_initialization_list.h
+    // test_syntax_object();
+
+    // ch08_operator.h
+    // test_syntax_operator();
+
+    // ch09_pointer();
+    //test_syntax_pointer();
+
+    // ch10_object_copy.h
+    test_object_copy();
 
     return 0;
 }
