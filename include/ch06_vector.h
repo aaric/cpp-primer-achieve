@@ -4,6 +4,24 @@
 
 void test_syntax_vector()
 {
+    std::vector<std::string> strings;
+    strings.push_back("Apple");
+    strings.push_back("Banana");
+    strings.push_back("Orange");
+
+    for (std::vector<std::string>::iterator it = strings.begin(); it != strings.end(); it++)
+    {
+        std::cout << *it << std::endl;
+    }
+
+    for (auto it = strings.begin(); it != strings.end(); it++)
+    {
+        std::cout << *it << std::endl;
+    }
+}
+
+void test_syntax_vector_v1()
+{
     std::vector<int> v1 = {1, 2, 3};
     v1.push_back(4);
     if (!v1.empty())
