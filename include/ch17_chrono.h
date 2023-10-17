@@ -6,18 +6,18 @@
 class Timer
 {
 private:
-    std::chrono::time_point<std::chrono::system_clock> start, end;
+    std::chrono::time_point<std::chrono::steady_clock> start, end;
     std::chrono::duration<float> duration;
 
 public:
     Timer()
     {
-        start = std::chrono::high_resolution_clock::now();
+        start = std::chrono::steady_clock::now();
     }
 
     ~Timer()
     {
-        end = std::chrono::high_resolution_clock::now();
+        end = std::chrono::steady_clock::now();
 
         duration = end - start;
         std::cout << "Timer Usage: " << duration.count() << "ms" << std::endl;
