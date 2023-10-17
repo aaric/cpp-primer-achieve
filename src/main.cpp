@@ -12,7 +12,8 @@
 // #include "ch12_template.h"
 // #include "ch13_macro.h"
 // #include "ch14_using_typedef.h"
-#include "ch15_function_pointer.h"
+// #include "ch15_function_pointer.h"
+#include "ch16_thread.h"
 
 // extern int g_two;
 
@@ -66,7 +67,10 @@ int main(int argc, char** argv)
     // test_syntax_using_typedef();
 
     // ch15_function_pointer.h
-    test_function_pointer();
+    // test_function_pointer();
+
+    // ch16_thread.h
+    test_syntax_thread();
 
     return 0;
 }
