@@ -13,7 +13,8 @@
 // #include "ch13_macro.h"
 // #include "ch14_using_typedef.h"
 // #include "ch15_function_pointer.h"
-#include "ch16_thread.h"
+// #include "ch16_thread.h"
+#include "ch17_chrono.h"
 
 // extern int g_two;
 
@@ -70,7 +71,10 @@ int main(int argc, char** argv)
     // test_function_pointer();
 
     // ch16_thread.h
-    test_syntax_thread();
+    // test_syntax_thread();
+
+    // ch17_chrono.h
+    test_syntax_chrono();
 
     return 0;
 }
