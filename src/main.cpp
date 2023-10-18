@@ -14,9 +14,10 @@
 // #include "ch14_using_typedef.h"
 // #include "ch15_function_pointer.h"
 // #include "ch16_thread.h"
-//#include "ch17_chrono.h"
-//#include "ch18_multi_array.h"
-#include "ch19_algorithm_sort.h"
+// #include "ch17_chrono.h"
+// #include "ch18_multi_array.h"
+// #include "ch19_algorithm_sort.h"
+#include "ch19_union.h"
 
 // extern int g_two;
 
@@ -76,13 +77,16 @@ int main(int argc, char** argv)
     // test_syntax_thread();
 
     // ch17_chrono.h
-    //test_syntax_chrono();
+    // test_syntax_chrono();
 
     // ch18_multi_array.h
-    //test_multi_array();
+    // test_multi_array();
 
     // ch19_algorithm_sort.h
-    test_algorithm_sort();
+    // test_algorithm_sort();
+
+    // ch19_union.h
+    test_syntax_union();
 
     return 0;
 }
