@@ -17,7 +17,8 @@
 // #include "ch17_chrono.h"
 // #include "ch18_multi_array.h"
 // #include "ch19_algorithm_sort.h"
-#include "ch19_union.h"
+// #include "ch19_union.h"
+#include "ch20_virtual_destructor.h"
 
 // extern int g_two;
 
@@ -86,7 +87,10 @@ int main(int argc, char** argv)
     // test_algorithm_sort();
 
     // ch19_union.h
-    test_syntax_union();
+    // test_syntax_union();
+
+    // ch20_virtual_destructor.h
+    test_virtual_destructor();
 
     return 0;
 }
