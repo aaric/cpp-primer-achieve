@@ -15,7 +15,8 @@
 // #include "ch15_function_pointer.h"
 // #include "ch16_thread.h"
 //#include "ch17_chrono.h"
-#include "ch18_multi_array.h"
+//#include "ch18_multi_array.h"
+#include "ch19_algorithm_sort.h"
 
 // extern int g_two;
 
@@ -78,7 +79,10 @@ int main(int argc, char** argv)
     //test_syntax_chrono();
 
     // ch18_multi_array.h
-    test_multi_array();
+    //test_multi_array();
+
+    // ch19_algorithm_sort.h
+    test_algorithm_sort();
 
     return 0;
 }
