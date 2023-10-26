@@ -18,7 +18,9 @@
 // #include "ch18_multi_array.h"
 // #include "ch19_algorithm_sort.h"
 // #include "ch19_union.h"
-#include "ch20_virtual_destructor.h"
+// #include "ch20_virtual_destructor.h"
+// #include "ch21_cast.h"
+#include "ch22_debug_break.h"
 
 // extern int g_two;
 
@@ -90,7 +92,13 @@ int main(int argc, char** argv)
     // test_syntax_union();
 
     // ch20_virtual_destructor.h
-    test_virtual_destructor();
+    // test_virtual_destructor();
+
+    // ch21_cast.h
+    // test_syntax_cast();
+
+    // ch22_debug_break.h
+    test_debug_break();
 
     return 0;
 }
