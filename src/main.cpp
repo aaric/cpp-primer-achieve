@@ -20,7 +20,8 @@
 // #include "ch19_union.h"
 // #include "ch20_virtual_destructor.h"
 // #include "ch21_cast.h"
-#include "ch22_debug_break.h"
+// #include "ch22_debug_break.h"
+#include "ch23_memory.h"
 
 // extern int g_two;
 
@@ -98,7 +99,10 @@ int main(int argc, char** argv)
     // test_syntax_cast();
 
     // ch22_debug_break.h
-    test_debug_break();
+    // test_debug_break();
+
+    // ch23_shard_ptr.h
+    test_memory_ptr();
 
     return 0;
 }
