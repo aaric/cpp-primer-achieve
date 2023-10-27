@@ -18,4 +18,7 @@ void test_syntax_tuple()
     int v1;
     std::tie(k1, v1) = InitKeyValue();
     std::cout << k1 << ", " << v1 << std::endl;
+
+    auto [k2, v2] = InitKeyValue();
+    std::cout << k2 << ", " << v2 << std::endl;
 }
