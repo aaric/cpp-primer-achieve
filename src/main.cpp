@@ -21,8 +21,9 @@
 // #include "ch20_virtual_destructor.h"
 // #include "ch21_cast.h"
 // #include "ch22_debug_break.h"
-//#include "ch23_memory.h"
-#include "ch24_tuple.h"
+// #include "ch23_memory.h"
+// #include "ch24_tuple.h"
+#include "ch25_optional.h"
 
 // extern int g_two;
 
@@ -103,10 +104,13 @@ int main(int argc, char** argv)
     // test_debug_break();
 
     // ch23_shard_ptr.h
-    //test_memory_ptr();
+    // test_memory_ptr();
 
     // ch24_tuple.h
-    test_syntax_tuple();
+    // test_syntax_tuple();
+
+    // ch25_optional.h
+    test_syntax_optional();
 
     return 0;
 }
